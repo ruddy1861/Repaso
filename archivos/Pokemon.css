@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(11, 247, 160);
+}
+.logo{
+    width: 1200px;
+    height: 300px;
+    background-color: rgba(0, 139, 139, 0.983);
+    text-align: center;
+    position: fixed;
+    box-shadow: 10px 10px 10px 10px #00000083;
+}
+.logo img{
+    width: 1000px;
+    height: 300px;
+}
+.FotoPokemon{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 174, 255, 0.897);
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #000;
+    box-shadow:  10px 20px 0px 0px #00000072;
+    position: relative;}
+
+.FotoPokemon img{
+    width: 200px;
+    height: 200px;}
+.pokemones1{
+    top: 400px;
+    left: 400px;
+}
+.pokemones2{
+    top: 200px;
+    left: 800px;
+}
+.pokemones3{
+    top: 200px;
+    left: 180px;
+}
+.pokemones4{
+    left: 1000px;
+}
+.pokemones5{
+    left: 400px;
+}
+.pokemones6{
+   bottom:200px ;
+    left: 800px;
+}
+.pokemones7{
+    left: 200px;
+    bottom: 200px;
+}
+.pokemones8{
+   bottom:400px ;
+    left: 1000px;
+}

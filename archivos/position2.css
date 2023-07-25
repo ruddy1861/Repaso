@@ -1,0 +1,9 @@
+
+.static{
+    width: 400px;
+    height: 400px;
+    position: static;
+    background-color: aqua;
+    top:500px;
+    left: 500%;
+}

@@ -1,0 +1,98 @@
+   /* .pdf {
+            font-size: 10px;
+            letter-spacing: 2px;
+        } */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        p {
+            line-height: 25px;
+            font-size: 11px;
+            text-align: justify;
+            word-spacing: 4px;
+        }
+        
+        .t-center {
+            text-align: center;
+        }
+        
+        .m-bottom {
+            margin-bottom: 40px;
+        }
+        
+        .m-bottom-light {
+            margin-bottom: 10px;
+        }
+        
+        .l-h-normal {
+            line-height: 18px;
+        }
+        
+        .l-h-none {
+            line-height: normal;
+        }
+        /* .header {
+            background-image: url("header-constancy.png");
+            width: 100vw;
+            height: 245px;
+            background-repeat: no-repeat;
+        } */
+        
+        .header {
+            position: absolute;
+            top: 0;
+        }
+        
+        .paginate {
+            position: absolute;
+            bottom: -7px;
+            right: 0;
+        }
+        
+        .img-club {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            width: 150px;
+        }
+        
+        .constancy {
+            margin: auto;
+            width: 650px;
+            font-size: 10px;
+            padding: 40px 40px 20px 40px;
+            letter-spacing: 2px;
+            margin-top: 115px;
+        }
+        
+        @media print {
+            * {
+                margin: 0;
+                padding: 0
+            }
+            @page {
+                size: A4 landscape;
+                margin: 0mm;
+            }
+            html,
+            body {
+                height: 100%;
+                overflow: hidden;
+                background: #FFF;
+                font-size: 9.5pt;
+            }
+            html {
+                background-color: red
+            }
+            body {
+                background-color: green
+            }}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+    <body>
+        <div class="header">
+            <img src="header-constancy.png" alt="">
+        </div>
+        <div class="img-club">
+            <img src="logo.jpg" alt="">
+        </div>
+    
+        <div class="constancy">
+            <h1>CONSTANCIA DE REGISTRO DE INSCRIPCIÓN DEL CLUB DE CIENCIA Y TECNOLOGIA EMITIDO POR LA {{$dependency->name}}</h1>
+            <p class="m-bottom">Quien suscribe, {{$dependency->director->name}}, identificado con DNI {{$dependency->director->dni}}, Director(a) de la Unidad de Gestión Educativa Local de {{$dependency->name}} hace constar la evaluación del registro el Club de Ciencia y Tecnologia
+                "{{$club->name}}" de la Institución Educativa {{$school->name}}, del distrito {{$ubigeo->district}}, Provincia de {{$ubigeo->province}}, de la Región {{$ubigeo->department}}, inscrito en SIGECCYT con código N° {{str_pad($club->id, 5,"0")}},
+                y reconocido ante su institución educativa mediante RDI N°{{str_pad($club->id, 5,"0")}}, para poder desarrollar sus actividades de implementación, ejecución, acompañamiento y monitoreo, y evaluación, durante el año escolar {{ (date("Y")-1)
+                }} – {{ date("Y") }}, que abarca el período de {{ $monthsN[(int)(date("m")-1)] }} a {{ $monthsN[(int)date("m")] }}.
+            </p>
+            <p class="m-bottom">Constancia que se expide a petición de parte interesada en la UGEL {{$dependency->name}}, el {{ date("d") }} de {{ date("m") }} del {{date("Y") }}.</p>
+            <p class=".m-bottom"><span><b>Atentamente,</b></span></p>
+            <p class="t-center l-h-none">____________________________</p>
+            <p class="t-center l-h-normal">{{$dependency->director->name}}</p>
+            <p class="t-center l-h-normal"><span><b>DNI N°</b></span> {{$dependency->director->dni}}</p>
+            <p class="t-center l-h-normal m-bottom"><span><b>Director(a) de la Unidad de Gestión Educativa Local {{$dependency->name}}</b></span></p>
+            <p>Nota: La constancia ha sido remitido a la Dirección Regional de Educación de {{$dependency->dre->name}}, con los documentos anexos del proceso de inscripción para su validación en las redes Nacionales de los Clubes de Ciencia y Tecnología. Esta
+                Constancia no tiene validez, si se comprueba algún tipo de alteración, si no lleva el sello oficial, la firma autorizada y los datos de dirección y teléfono de la institución encargada del registro. </p>
+        </div>
+    
+        <div class="paginate">
+            <img src="footer-constancy.png" alt="">
+        </div>
+    </body>
+    
+    </html>
